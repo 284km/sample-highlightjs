@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>highlight.js sample</title>
+  <link rel="stylesheet" href="./solarized_dark.css">
+  <script src="./highlight.pack.js"></script>
+</head>
+<body>
+
+<h1>highlight.js samples</h1>
+
+<p>&lt;code&gt;</p>
+<pre><code>
+$text = &quot;Hello World!!&quot;;
+echo $text;
+</code></pre>
+
+<p>&lt;code class="ruby"&gt;<p>
+<pre><code class="ruby highlightjs"># foobar.rb
+class Test
+  def foo
+    p "bar"
+  end
+end
+</code></pre>
+
+<p>&lt;code class="nohighlight"&gt;<p>
+<pre><code class="nohighlight"># nohighlight.rb
+class Test
+  def foo
+    p "bar"
+  end
+end
+</code></pre>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+hljs.initHighlightingOnLoad();
+
+// .highlightjs だけをハイライトしたい場合は上記削除してこう書く(require jquery)
+// $(function(){
+//    $(".highlightjs").each(function(i, block) {
+//       hljs.highlightBlock(block);
+//    });
+// });
+
+</script>
+
+</body>
+</html>
